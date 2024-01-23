@@ -1,4 +1,4 @@
-import React, { useEffect,useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { BsInstagram, BsLinkedin } from "react-icons/bs";
 import { SiGmail, SiYoutube } from "react-icons/si";
@@ -14,7 +14,7 @@ const variant1 = {
   visible: {
     opacity:1,
     transition: {
-      delay:7.1,
+      delay:7,
       duration: 0.5,
     },
   },
@@ -23,28 +23,6 @@ const variant1 = {
 function Section1v2({ scrollByVH }) {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-
-    const hasVideoPlayed = localStorage.getItem('hasVideoPlayed');
-    console.log('Has video played: '+hasVideoPlayed);
-    if (hasVideoPlayed==='false') {
-      console.log("Hello");
-      videoRef.current.play();
-      localStorage.setItem('hasVideoPlayed', 'true');
-    }
-
-    const handleBeforeUnload = () => {
-      localStorage.setItem('hasVideoPlayed', 'false');
-    };
-
-    window.addEventListener('beforeunload', handleBeforeUnload);
-
-    return () => {
-      window.removeEventListener('beforeunload', handleBeforeUnload);
-    };
-  }, []);
 
   function Number({ n }) {
     const props = useSpring({
@@ -94,7 +72,7 @@ function Section1v2({ scrollByVH }) {
 
 
           <div
-            className={`w-full flex flex-col font-poppins absolute bg-white ${
+            className={`w-full flex flex-col bg-white font-poppins absolute ${
               isOpen ? "z-20 h-[50%]" : "-z-20"
             } transition-all ease-in-out duration-300`}
           >
@@ -358,7 +336,7 @@ function Section1v2({ scrollByVH }) {
 
 
       {isOpen && (
-        <div className="hidden lg:flex absolute top-0 left-0 transition-all w-1/2  max-h-max bg-white z-20 items-center">
+        <div className="hidden lg:flex absolute top-0 left-0 transition-all w-1/2  max-h-max bg-transparent z-20 items-center">
           <div className="lg:flex flex-col w-[25vw] h-full pl-[calc(100vw/24)] py-[calc(100vw/24)] justify-between">
             <div className="lg:space-y-4 flex flex-col m-20 w-[80%]">
               <button
@@ -439,9 +417,7 @@ function Section1v2({ scrollByVH }) {
 
       {/* MOB SECTION */}
       
-
-      <video ref={videoRef} muted width='100%' height='100%' className="absolute z-[0]">
-
+      <video autoPlay="1" muted width='100%' height='100%' className="absolute z-[0]">
         <source src="/assets/kriya_logo.mp4" type="video/mp4"/>
       </video>
 

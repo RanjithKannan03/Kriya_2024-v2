@@ -61,12 +61,9 @@ const Workshop = () => {
 
   useEffect(() => {
     fetchWorkshopStats().then((res) => {
-      
       setCurrentCount(
         res.data?.workshopWiseCount.find((i) => i._id === id)?.count
       );
-         
-
     });
   }, [id]);
 
@@ -98,21 +95,76 @@ const Workshop = () => {
       <div className="flex w-[calc(100%+4rem)] lg:w-[calc(100%+8rem)] overflow-x-hidden space-x-6 whitespace-nowrap py-2 mb-12 text-white bg-gradient-to-r from-[#C80067] to-[#5451B6] -mx-16">
         <div className="animate-marquee [will-change:transform] whitespace-nowrap flex space-x-6">
           <p className="">
-            ✨ Early Bird Offer ! ✨ On all workshops for 20% of seats{" "}
+            ✨ Early Bird Offer ! ✨ On all workshops till{" "}
+            <b>
+              15<sup>th</sup>
+            </b>{" "}
+            March
           </p>
           <p className="">
-            ✨ Early Bird Offer ! ✨ On all workshops for 20% of seats{" "}
+            ✨ Early Bird Offer ! ✨ On all workshops till{" "}
+            <b>
+              15<sup>th</sup>
+            </b>{" "}
+            March
           </p>
           <p className="">
-            ✨ Early Bird Offer ! ✨ On all workshops for 20% of seats{" "}
+            ✨ Early Bird Offer ! ✨ On all workshops till{" "}
+            <b>
+              15<sup>th</sup>
+            </b>{" "}
+            March
           </p>
           <p className="">
-            ✨ Early Bird Offer ! ✨ On all workshops for 20% of seats{" "}
+            ✨ Early Bird Offer ! ✨ On all workshops till{" "}
+            <b>
+              15<sup>th</sup>
+            </b>{" "}
+            March
           </p>
           <p className="">
-            ✨ Early Bird Offer ! ✨ On all workshops for 20% of seats{" "}
+            ✨ Early Bird Offer ! ✨ On all workshops till{" "}
+            <b>
+              15<sup>th</sup>
+            </b>{" "}
+            March
           </p>
-        </div> 
+          <p className="">
+            ✨ Early Bird Offer ! ✨ On all workshops till{" "}
+            <b>
+              15<sup>th</sup>
+            </b>{" "}
+            March
+          </p>
+          <p className="">
+            ✨ Early Bird Offer ! ✨ On all workshops till{" "}
+            <b>
+              15<sup>th</sup>
+            </b>{" "}
+            March
+          </p>
+          <p className="">
+            ✨ Early Bird Offer ! ✨ On all workshops till{" "}
+            <b>
+              15<sup>th</sup>
+            </b>{" "}
+            March
+          </p>
+          <p className="">
+            ✨ Early Bird Offer ! ✨ On all workshops till{" "}
+            <b>
+              15<sup>th</sup>
+            </b>{" "}
+            March
+          </p>
+          <p className="">
+            ✨ Early Bird Offer ! ✨ On all workshops till{" "}
+            <b>
+              15<sup>th</sup>
+            </b>{" "}
+            March
+          </p>
+        </div>
       </div>
       <div className="w-fit">
         <h1 className="text-3xl text-white font-semibold px-8 lg:px-0">
@@ -329,6 +381,16 @@ const Workshop = () => {
           </div>
         </div>
       </div>
+      {workshopDetail.prerequisites && (
+        <div className="flex flex-row gap-4 w-full my-4 lg:px-0">
+          <div className="bg-[#ffffff] w-full lg:rounded-3xl p-8 lg:p-12 space-y-4">
+            <p className="text-3xl font-semibold tracking-wider text-[#3c4043]">
+              Prerequisites
+            </p>
+            <p className = "mt-5"> - {workshopDetail.prerequisites}</p>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

@@ -86,13 +86,15 @@ const particlesLoaded = (container) => {
         <div className="w-[60%] lg:w-[80%] ml-8 lg:ml-0 mt-2 h-[4px] bg-gradient-to-r rounded-[2px] from-[#3b82f6] to-[#8b5cf6]"></div>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-4 w-full lg:px-0 my-8 text-black">
-        <div className="w-full lg:w-3/5">
-          <div className="bg-white lg:rounded-3xl space-y-8 mb-8 relative py-8 px-8">
-            <p className="text-2xl font-semibold tracking-wider text-[#3c4043]">
+      <div className="flex flex-col lg:flex-row gap-4 w-full lg:px-0 my-8 text-black ">
+
+        <div className="flex flex-col w-full justify-between lg:w-3/5 space-y-5 ">
+
+          <div className="bg-white text-[#3c4043] lg:rounded-3xl lg:px-0 space-y-8 relative py-8 px-8 h-full">
+            <p className="text-2xl text-left pl-10 font-semibold tracking-wider text-[#3c4043] lg:text-[#3c4043]">
               Theme
             </p>
-            <ul className="list-disc text-base lg:text-lg text-[#3c4043] pl-4 space-y-2 lg:pr-16">
+            <ul className=" list-disc text-left pl-10 lg:text-lg text-[#3c4043] lg:text-[#3c4043]  space-y-2 lg:pr-16">
               {paperDetail.topic.split("\n").map((item, index) => (
                 <li
                   key={index}
@@ -107,11 +109,11 @@ const particlesLoaded = (container) => {
             </ul>
           </div>
 
-          <div className="bg-white lg:rounded-3xl space-y-8 relative py-8 px-8">
-            <p className="text-2xl font-semibold tracking-wider text-[#3c4043]">
+          <div className="bg-white  lg:rounded-3xl lg:px-0 space-y-8 relative py-8 px-8 ">
+            <p className="text-2xl font-semibold tracking-wider text-[#3c4043] pl-10">
               Rules
             </p>
-            <ul className="list-disc text-base lg:text-base text-[#3c4043] pl-4 space-y-2 lg:pr-16">
+            <ul className="list-disc text-base lg:text-base text-[#3c4043] pl-10 space-y-2 lg:pr-16">
               {paperDetail.rules.split("\n").map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
@@ -123,15 +125,15 @@ const particlesLoaded = (container) => {
           {!userPaperDetails.find((i) => i.paperId === id) ? (
             <button
               className="bg-white lg:rounded-3xl p-8 lg:p-12 space-y-4 text-center lg:text-left flex justify-center lg:justify-start"
-              // onClick={() => {
-              //   window.confirm("Are you sure you want to register ?")
-              //     ? handleRegister()
-              //     : console.log("Cancelled");
-              // }}
+              onClick={() => {
+                window.confirm("Are you sure you want to register ?")
+                  ? handleRegister()
+                  : console.log("Cancelled");
+              }}
             >
               <span className="text-3xl lg:text-3xl font-semibold tracking-wide bg-clip-text [-webkit-text-fill-color:transparent] bg-gradient-to-r from-[#3b82f6] to-[#8b5cf6]">
-                {/* {"Register Here!"} */}
-                {"Registrations Closed!"}
+                {"Register Here!"}
+                {/* {"Registrations Closed!"} */}
               </span>
             </button>
           ) : (
@@ -160,8 +162,8 @@ const particlesLoaded = (container) => {
             </div>
           )}
 
-          <div className="lg:bg-[#ffffff] lg:rounded-3xl p-8 lg:p-12 space-y-6">
-            <p className="text-2xl font-semibold bg-gradient-to-r from-[#3b82f6] to-[#8b5cf6] tracking-wide text-transparent bg-clip-text">
+          <div className="lg:bg-[#ffffff] lg:rounded-3xl p-8 lg:p-12 space-y-6 h-full">
+            <p className="text-2xl font-semibold tracking-wide text-white lg:text-[#3c4043]">
               Abstract Submission Deadline
             </p>
 
@@ -171,10 +173,10 @@ const particlesLoaded = (container) => {
               </p>
               <div className="flex flex-col">
                 <p className="text-lg font-semibold tracking-wide text-white lg:text-[#3c4043]">
-                  March
+                  February
                 </p>
                 <p className="text-lg font-semibold tracking-wide text-white lg:text-[#3c4043]">
-                  2023
+                  2024
                 </p>
               </div>
             </div>
@@ -189,9 +191,13 @@ const particlesLoaded = (container) => {
               </ul>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div className="flex flex-row gap-4 w-full my-4 lg:px-0">
-            <div className="bg-[#ffffff] w-full lg:rounded-3xl p-8 lg:p-12 space-y-4">
+
+
+      <div className = "flex flex-col lg:flex-row space-x-5">
+            <div className="bg-[#ffffff] w-full lg:rounded-3xl p-8 lg:p-12 space-y-4 mr-10">
               <p className="text-2xl font-semibold tracking-wide text-[#3c4043] pb-4">
                 Presentation Details
               </p>
@@ -242,9 +248,10 @@ const particlesLoaded = (container) => {
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="lg:bg-[#ffffff] lg:rounded-3xl p-8 lg:p-12 space-y-6">
+
+
+          <div className="lg:bg-[#ffffff] w-full  lg:rounded-3xl p-8 lg:m-12 space-y-6">
             <p className="text-3xl lg:text-3xl font-semibold tracking-wide text-white lg:text-[#3c4043]">
               Contact
             </p>
@@ -303,8 +310,9 @@ const particlesLoaded = (container) => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+
+
+          </div>
     </section>
   );
 };

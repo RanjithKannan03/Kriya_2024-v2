@@ -11,9 +11,6 @@ const PSG_COLLEGE =
   "PSG College of Technology (Autonomous), Peelamedu, Coimbatore District 641004";
 
 const PaymentSuccess = () => {
-  useEffect(() => {
-    localStorage.setItem("hasVideoPlayed", "false");
-  }, []);
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
 

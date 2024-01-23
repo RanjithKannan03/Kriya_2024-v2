@@ -1,8 +1,13 @@
 import axios from "axios";
-import EventsList from "../data/eventsList2.json";
+// import EventsList from "../data/eventsList2.json";
+import EventsList from "../data/eventdetails24.json"
+
 import PapersList from "../data/ppList.json";
+// import PapersList from "../data/ppr24.json"
+
 // import WorkList from "../data/workList.json";
 import WorkList from '../data/workshopList2.json';
+// import WorkList from "../data/workshop24.json";
 
 export const BACKEND_URL = "http://localhost:4300";
 

@@ -126,7 +126,7 @@ const Section2 = ({ scrollYByVH }) => {
               className={`calender-text opacity-0 mt-8 w-fit px-4 py-2 text-lg font-poppins rounded-lg ${borderCondition} transition-color duration-300 ease-in-out ${condition} border`}
               onClick={() => {
                 window.open(
-                  "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20240223T093000Z%2F20240223T113000Z&details=&location=PSG College of Technology&text=Kriya%20%2724%20Inauguration"
+                  "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230324T033000Z%2F20230324T053000Z&details=&location=&text=Kriya%20%2723%20Inauguration"
                 );
               }}
             >

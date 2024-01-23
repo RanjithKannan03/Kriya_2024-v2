@@ -135,7 +135,7 @@ const particlesLoaded = (container) => {
           {
 
           }
-          {/* <button
+          <button
             onClick={() => {
               navigate(`${accomodationDetails ? "/portal/acc-registered" : "/portal/accommodation"}`);
             }}
@@ -143,7 +143,7 @@ const particlesLoaded = (container) => {
           >
             {accomodationDetails ? "View your acommodation details here" : "Apply for Accommodation"}
             <IoIosArrowForward />
-          </button> */}
+          </button>
         </div>
       </div>
       {userDetails && (

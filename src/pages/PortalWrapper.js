@@ -16,11 +16,6 @@ import "../styles/gradientAnimation.css";
 import { BiBuildingHouse } from "react-icons/bi";
 
 const PortalWrapper = ({ children }) => {
-
-  useEffect(() => {
-    localStorage.setItem("hasVideoPlayed", "false");
-  }, []);
-
   return (
     <main className="w-screen h-screen overflow-x-hidden flex items-center bg-[#181818] ">
       <div className="w-4 bg-[#181818] h-screen hidden lg:block"></div>
@@ -130,13 +125,13 @@ const NavBarForDesktop = () => {
             <HiOutlinePresentationChartBar className="text-2xl" />
             <p className="">Paper Presentations</p>
           </Link>
-          {/* <Link
+          <Link
             to="/portal/accommodation"
             className="w-full text-gray-600 text-left hover:text-black text-base py-2 flex items-center space-x-4"
           >
             <BiBuildingHouse className="text-2xl" />
             <p className="">Accommodations</p>
-          </Link> */}
+          </Link>
         </div>
         <div className="py-8">
           <div className="flex space-x-4 items-center">

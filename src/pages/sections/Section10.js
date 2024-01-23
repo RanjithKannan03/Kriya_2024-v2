@@ -41,7 +41,7 @@ const Section10 = ({ scrollYByVH }) => {
         className="h-fit lg:h-screen w-full p-0 py-8 lg:p-16 lg:px-[calc(100vw/16)] lg:pr-0 flex flex-col lg:flex-row lg:items-center"
       >
         <div className="w-full lg:w-[40%] h-full flex items-center px-8 lg:pl-0 lg:pr-16 font-semibold font-poppins">
-          <h1 className="text-4xl lg:text-6xl lg:leading-none text-center lg:text-left w-full">
+          <h1 className="text-4xl lg:text-5xl text-center lg:text-left w-full">
             Introducing our{" "}
             <span className="bg-clip-text [-webkit-text-fill-color:transparent] bg-gradient-to-r from-[#3b82f6] to-[#8b5cf6]">
               {" Flagship "}

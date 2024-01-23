@@ -90,8 +90,10 @@ const particlesLoaded = (container) => {
     }
   };
 
+
+
   return !eventDetail ? (
-    <section className="w-full lg:px-16 font-poppins py-12 pt-36 lg:pt-12 h-screen overflow-y-scroll">
+        <section className="w-full lg:px-16 font-poppins py-12 pt-36 lg:pt-12 h-screen overflow-y-scroll">
       <p className="text-white text-xl px-8">Loading...</p>
     </section>
   ) : (
@@ -118,8 +120,8 @@ const particlesLoaded = (container) => {
             description={eventDetail.round_desc_1}
           />
 
-          {eventDetail.round_title_2.length > 0 &&
-            eventDetail.round_desc_2.length > 0 && (
+          {eventDetail?.round_title_2?.length > 0 &&
+            eventDetail?.round_desc_2?.length > 0 && (
               <RoundDescription
                 roundNumber={2}
                 title={eventDetail.round_title_2}
@@ -127,17 +129,17 @@ const particlesLoaded = (container) => {
               />
             )}
 
-          {eventDetail.round_title_3.length > 0 &&
-            eventDetail.round_desc_3.length > 0 && (
+          {eventDetail?.round_title_3?.length > 0 &&
+            eventDetail?.round_desc_3?.length > 0 && (
               <RoundDescription
                 roundNumber={3}
-                title={eventDetail.round_title_3}
-                description={eventDetail.round_desc_3}
+                title={eventDetail?.round_title_3}
+                description={eventDetail?.round_desc_3}
               />
             )}
 
-          {eventDetail.round_title_4.length > 0 &&
-            eventDetail.round_desc_4.length > 0 && (
+          {eventDetail?.round_title_4?.length > 0 &&
+            eventDetail?.round_desc_4?.length > 0 && (
               <RoundDescription
                 roundNumber={4}
                 title={eventDetail.round_title_4}
@@ -340,6 +342,9 @@ const particlesLoaded = (container) => {
           </div>
         </div>
       )}
+      
+
+
     </section>
   );
 };

@@ -103,7 +103,7 @@ const OtherPayments = ({ switchPage }) => {
     localStorage.setItem("txn", transaction.data.transactionId);
     localStorage.setItem(
       "txn_redirect_uri",
-      `/portal/workshop/${searchParams.get("eventId")}`
+      `/portal/profile`
     );
     console.log(transaction);
     window.open(transaction.url, "_blank");

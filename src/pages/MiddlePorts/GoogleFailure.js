@@ -1,11 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
 
 const GoogleFailure = () => {
-  useEffect(() => {
-    localStorage.setItem("hasVideoPlayed", "false");
-  }, []);
   const navigate = useNavigate();
 
   return (

@@ -82,17 +82,17 @@ const Section9 = () => {
           <div className="flex-1 flex flex-col lg:flex-wrap gap-8 lg:gap-6 lg:gap-y-12 lg:flex-row items-center lg:justify-between">
             <div className="w-full lg:w-56">
               <h5 className="text-xs tracking-widest">Chairperson</h5>
-              <ContactItem name="Kailesh Prabhu R" phone="+91 94426 99720" />
+              <ContactItem name="Dharmendra R" phone="+91 94860 60706" />
 
               <h5 className="text-xs tracking-widest mt-8">Co-Chairperson</h5>
-              <ContactItem name="Arun A R" phone="+91 97895 89682" />
+              <ContactItem name="Mano M" phone="+91 93600 07515" />
             </div>
             <div className="w-full lg:w-56">
               <h5 className="text-xs tracking-widest">Event Support</h5>
-              <ContactItem name="Harish Kumar R" phone="+91 73586 48642" />
+              <ContactItem name="Kavinesh" phone="+91 93613 57737" />
               <ContactItem
-                name="Harivardhan S V"
-                phone="+91 96263 86882"
+                name="Aditya Varma"
+                phone="+91 82486 84835"
                 className="mt-4 lg:mt-14"
               />
             </div>
@@ -100,24 +100,24 @@ const Section9 = () => {
               <h5 className="text-xs tracking-widest">
                 PR & Sponsorship Support
               </h5>
-              <ContactItem name="Nakulan A" phone="+91 94889 64540" />
+              <ContactItem name="Athrukshna" phone="+91 99433 19292" />
               <ContactItem
-                name="Raghan Harkesh R"
-                phone="+91 94882 72050"
+                name="Sudharshan"
+                phone="+91 87546 13534"
                 className="mt-4 lg:mt-14"
               />
             </div>
             <div className="w-full lg:w-56">
               <h5 className="text-xs tracking-widest">Tech Support</h5>
-              <ContactItem name="Mithilesh E N" phone="+91 88839 12299" />
+              <ContactItem name="T G Ashwin Kumar" phone="+91 96596 04838" />
               <ContactItem
-                name="Navaneetha Krishnan"
-                phone="+91 93445 00118"
+                name="Jeyam Palaniappan"
+                phone="+91 93847 68177"
                 className="mt-4 lg:mt-14"
               />
             </div>
 
-            {/* <div className="w-full lg:w-56">
+            <div className="w-full lg:w-56">
               <h5 className="text-xs tracking-widest">Accommodation Support</h5>
               <ContactItem name="Bharath R (Boys)" phone="+91 93447 85172" />
               <ContactItem
@@ -125,7 +125,7 @@ const Section9 = () => {
                 phone="+91 87544 16195"
                 className="mt-4 lg:mt-14"
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </section>

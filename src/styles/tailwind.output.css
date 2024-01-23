@@ -763,10 +763,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 1rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .-ml-2 {
   margin-left: -0.5rem;
 }
@@ -777,6 +773,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-0 {
   margin-top: 0px;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .ml-1 {
@@ -3675,6 +3675,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
+  .lg\:bg-\[\#181818\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(24 24 24 / var(--tw-bg-opacity));
+  }
+
   .lg\:bg-\[\#3c4043\] {
     --tw-bg-opacity: 1;
     background-color: rgb(60 64 67 / var(--tw-bg-opacity));
@@ -3906,10 +3911,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 4rem;
   }
 
-  .lg\:leading-none {
-    line-height: 1;
-  }
-
   .lg\:tracking-wider {
     letter-spacing: 0.05em;
   }
@@ -3917,6 +3918,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:text-\[\#3c4043\] {
     --tw-text-opacity: 1;
     color: rgb(60 64 67 / var(--tw-text-opacity));
+  }
+
+  .lg\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
   .lg\:shadow-md {

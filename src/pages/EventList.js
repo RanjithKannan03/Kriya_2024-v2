@@ -86,6 +86,9 @@ const particlesLoaded = (container) => {
           rightCurve="bg-[#010101]"
           iconImg={"https://cdn-icons-png.flaticon.com/512/3309/3309977.png"}
         />
+
+
+
         <h1
           className={`text-3xl lg:text-4xl font-semibold text-center pt-8`}
           id="kriyative"
@@ -108,6 +111,8 @@ const particlesLoaded = (container) => {
           }
         />
 
+
+
         <h1
           className={`text-3xl lg:text-4xl font-semibold text-center pt-8`}
           id="brainiac"
@@ -118,7 +123,7 @@ const particlesLoaded = (container) => {
         </h1>
         <EventsGrid
           imgurl={
-            "/assets/EventGrid/brainiac.jpg"
+            "/assets/EventGrid/circuit.jpg"
           }
           arrowCircleStart="from-[#980283]"
           arrowCircleEnd="to-[#500d23]"
@@ -130,21 +135,24 @@ const particlesLoaded = (container) => {
           }
         />
 
+
+
+
         <h1
           className={`text-3xl lg:text-4xl font-semibold text-center pt-8`}
-          id="circuit"
+          id="amuse"
         >
           <span className="bg-clip-text [-webkit-text-fill-color:transparent] bg-gradient-to-r from-[#e8567c] to-[#f48555]">
-            Circuit
+            Amuse
           </span>
         </h1>
         <EventsGrid
           imgurl={
-            "/assets/EventGrid/circuit.jpg"
+             "/assets/EventGrid/brainiac.jpg"
           }
           arrowCircleStart="from-[#c74517]"
           arrowCircleEnd="to-[#5c330f]"
-          obj={events.filter((i) => i.category === "Circuit")}
+          obj={events.filter((i) => i.category === "Amuse")}
           topCurve="bg-[#e04918]"
           rightCurve="bg-[#e04918]"
           iconImg={

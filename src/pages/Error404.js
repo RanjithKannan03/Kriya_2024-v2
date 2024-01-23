@@ -1,12 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 
 const Error404 = () => {
-
-  useEffect(() => {
-    localStorage.setItem("hasVideoPlayed", "false");
-  }, []);
   return (
     <main className="h-screen w-screen relative overflow-hidden">
       <div

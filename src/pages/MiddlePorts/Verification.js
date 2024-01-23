@@ -7,9 +7,6 @@ const PSG_COLLEGE =
   "PSG College of Technology (Autonomous), Peelamedu, Coimbatore District 641004";
 
 const Verification = () => {
-  useEffect(() => {
-    localStorage.setItem("hasVideoPlayed", "false");
-  }, []);
   const { id } = useParams();
   const navigate = useNavigate();
   const [formData, setFormData] = useState(null);

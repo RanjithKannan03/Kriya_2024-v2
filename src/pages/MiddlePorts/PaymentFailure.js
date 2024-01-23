@@ -3,13 +3,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { fetchPaymentDetailsByTxnId } from "../../API/call";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
 
-
 const PaymentFailure = () => {
-
-  useEffect(() => {
-    localStorage.setItem("hasVideoPlayed", "false");
-  }, []);
-
   const [searchParams, setsearchParams] = useSearchParams();
   const [transactionDetails, setTransactionDetails] = useState(null);
 

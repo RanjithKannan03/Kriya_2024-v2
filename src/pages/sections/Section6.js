@@ -114,7 +114,7 @@ const Section6 = () => {
                       ><img src="https://skyx.co.in/wp-content/uploads/2022/04/SkyX_Color.png"/></div>
                     </div>
                     <p className="uppercase text-base lg:text-lg text-[#181818] tracking-wider text-center">
-                      {"SKYX AEROSPACE"}
+                      {"The Indian Express"}
                     </p>
                   </div>
                 </div>
